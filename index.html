@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sid's PDF</title>
+    <style>
+        
+        
+        @font-face {
+            font-family: 'Myriad Arabic';
+            src: url('Myriad Arabic Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        header {
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: #fff;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 10; /* Ensure the header is above the iframe */
+            font-family: 'Myriad Arabic', sans-serif; /* Use Myriad Arabic font */
+        }
+        h1 {
+            margin: 0;
+            font-weight: 500;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Ensure the iframe is below the header */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>App Made And Hosted By Sid</h1>
+    </header>
+    <iframe src="https://stirlingpdf.io" frameborder="0"></iframe>
+</body>
+</html>
